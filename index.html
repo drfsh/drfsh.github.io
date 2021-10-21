@@ -53,7 +53,7 @@
     <!-- Buttons -->
     
          <button style="margin-bottom: 1rem;" class="overlay__btn overlay__btn--colors">
-                 <a href="http://iranrehabexpo.com/api/app/unista/download">
+                 <a href="http://iranrehabexpo.com/api/app/unista/download" onclick="alert('2')">
 
         <span>دانلود یونیستا</span>
         <span class="overlay__btn-emoji"> 
@@ -85,7 +85,15 @@
     </div>
   </div>
 </div>
-   
+<script>
+function httpGet(theUrl)
+{
+    var xmlHttp = new XMLHttpRequest();
+    xmlHttp.open( "GET", theUrl, false ); // false for synchronous request
+    xmlHttp.send( null );
+    return xmlHttp.responseText;
+}
+</script>
     
 </body>
 </html>
